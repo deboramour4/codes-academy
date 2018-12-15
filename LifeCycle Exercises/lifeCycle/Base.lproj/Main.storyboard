@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifeCycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msgSeeConsole" highlightedImage="msgSeeConsole" translatesAutoresizingMaskIntoConstraints="NO" id="tlV-fd-oLQ">
+                                <rect key="frame" x="37" y="252" width="300" height="162"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoAppleAcademy" translatesAutoresizingMaskIntoConstraints="NO" id="DbC-PS-yvr">
+                                <rect key="frame" x="110" y="43" width="155" height="155"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hov-th-8uf">
+                                <rect key="frame" x="0.0" y="442" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PUc-UY-aIF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bya-D4-rs8">
+                                <rect key="frame" x="0.0" y="526" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GGg-eK-8d1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c0-Lf-bjS">
+                                <rect key="frame" x="0.0" y="484" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GFM-vM-IgF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DbC-PS-yvr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="3a6-K0-lWr"/>
+                            <constraint firstItem="hov-th-8uf" firstAttribute="trailing" secondItem="8c0-Lf-bjS" secondAttribute="trailing" id="FUB-a7-agG"/>
+                            <constraint firstItem="8c0-Lf-bjS" firstAttribute="top" secondItem="hov-th-8uf" secondAttribute="bottom" constant="21" id="Jcb-uX-YWW"/>
+                            <constraint firstItem="hov-th-8uf" firstAttribute="top" secondItem="tlV-fd-oLQ" secondAttribute="bottom" constant="28" id="LZJ-67-t0A"/>
+                            <constraint firstItem="8c0-Lf-bjS" firstAttribute="leading" secondItem="bya-D4-rs8" secondAttribute="leading" id="MnZ-XX-13c"/>
+                            <constraint firstItem="tlV-fd-oLQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="UnW-QQ-3eY"/>
+                            <constraint firstItem="DbC-PS-yvr" firstAttribute="centerX" secondItem="tlV-fd-oLQ" secondAttribute="centerX" id="Wpp-DI-2fK"/>
+                            <constraint firstAttribute="trailing" secondItem="hov-th-8uf" secondAttribute="trailing" id="ZUg-eI-exN"/>
+                            <constraint firstItem="tlV-fd-oLQ" firstAttribute="centerX" secondItem="hov-th-8uf" secondAttribute="centerX" id="a0u-uI-x02"/>
+                            <constraint firstItem="hov-th-8uf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eAa-cs-LQV"/>
+                            <constraint firstItem="bya-D4-rs8" firstAttribute="top" secondItem="8c0-Lf-bjS" secondAttribute="bottom" constant="21" id="f3h-ei-SP8"/>
+                            <constraint firstItem="hov-th-8uf" firstAttribute="leading" secondItem="8c0-Lf-bjS" secondAttribute="leading" id="pWI-ko-olZ"/>
+                            <constraint firstItem="tlV-fd-oLQ" firstAttribute="top" secondItem="DbC-PS-yvr" secondAttribute="bottom" constant="54" id="rZq-jP-hiN"/>
+                            <constraint firstItem="tlV-fd-oLQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rlv-Zy-iXG"/>
+                            <constraint firstItem="DbC-PS-yvr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="rys-ds-UlW"/>
+                            <constraint firstItem="8c0-Lf-bjS" firstAttribute="trailing" secondItem="bya-D4-rs8" secondAttribute="trailing" id="sCE-Wz-7Mt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bya-D4-rs8" secondAttribute="bottom" constant="120" id="xx3-zr-gIl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="l1" destination="hov-th-8uf" id="iks-IH-hdm"/>
+                        <outlet property="l2" destination="8c0-Lf-bjS" id="o1I-LV-WW6"/>
+                        <outlet property="l3" destination="bya-D4-rs8" id="DAh-FM-I9T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logoAppleAcademy" width="226" height="243"/>
+        <image name="msgSeeConsole" width="780" height="394"/>
+    </resources>
+</document>
